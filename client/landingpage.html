@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Samarth T-square Developers- Real estate developer in Mumbai</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/images/samarth_color_logo.png" type="image/x-icon">
+    
+	<script src="js/jquery.min.js"></script>
+	<div id="styling"></div>
+	<link rel="stylesheet" href="./css/added.css">
+	<link rel="stylesheet" href="./css/startingLoader.css">
+  <link rel="stylesheet" href="./css/landing_page.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    
+</head>
+<body>
+    <div class="loader">
+		<span class="loader-block"></span>
+		<span class="loader-block"></span>
+		<span class="loader-block"></span>
+		<span class="loader-block"></span>
+		<span class="loader-block"></span>
+		<span class="loader-block"></span>
+		<span class="loader-block"></span>
+		<span class="loader-block"></span>
+		<span class="loader-block"></span>
+	  </div>
+      <div class="main-container-wrap">
+		<script>
+			const startingLoader = document.querySelector('.loader');
+			const bodyElement = document.querySelector('.main-container-wrap');
+			bodyElement.style.display='none';
+			startingLoader.style.visibility='visible';
+		</script>
+        <div class="embed-responsive embed-responsive-16by9 main-content" style="height: 619px;"> 
+            <video style="height: 100%; width: 100%;" autoplay muted>
+                <source class="startingwebvideo"src="./startingpageVideo.mp4" type="video/mp4">
+                 <source class="startingmobvideo" src="./startingpageVideo_MOBILE.mp4" type="video/mp4">
+                
+            </video>
+            <div class="content-video" id='nextLink' >
+              <h1 class="fontStyle">To visit us</h1>
+                 <a href='/home' id='nextLink'><i class="fa fa-arrow-right"></i></a> 
+                <a href='/home' ><img class="landingpageimg" src='./images/samarth_color_logo.png'></a>
+              <h1 class="secondHeader fontStyle">Click here</h1>
+            </div>
+        </div> 
+    </div>
+
+    <script>
+        window.addEventListener('load',function(){
+            //alert('document loaded');
+            const buttonElement = document.querySelector('#nextLink')
+            setTimeout(function(){
+                startingLoader.style.visibility='hidden';
+                bodyElement.style.display='block';
+            },1000)
+
+
+            setTimeout(function(){
+                buttonElement.style.visibility='visible';
+                // buttonElement.style.animation= 'in 2s forwards';
+                /* buttonElement.style.width='90%';
+                buttonElement.style.transform='scale(1.2)'; */
+            },7000)
+            
+        })
+    </script>
+</body>
+</html>

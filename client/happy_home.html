@@ -1,0 +1,102 @@
+<section class="ftco-section ftco-portfolio" style="padding: 4em 0;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 content-column">
+					<div class="content-div" >
+						
+                        <div class="content-image1">
+                            <!-- <img class="top" src="./images/project/Samarth_menaba_4.jpg"> 
+                            <img class="top" src="./images/project/Samarth_menaba_3.png"> -->
+                            <img class="top" src="./images/project/happyhome_2.jpg"> 
+                            <!--<img class='top' src="./images/project/happyhome.png">-->
+                            
+                        </div>
+                        <div class="content-writeup">
+                            <div class="content-inner-part">
+                                <h1>HAPPY HOME </h1>
+                                <p>Happy Home is a housing project where you can reside with all comforts and ease. The tower is well planned to let you lead a comfortable lifestyle. The apartment here will provide you with a host of amenities and facilities.</p>
+                                <p>Current Status- Completed</p>
+                                 <p> OC RECEIVED </p> 
+                                 <p>MAHARera Registered- P51800002874</p> 
+                                <!--<p>Working Partner- Bhoomi Developers</p>-->
+                                <p>Location- Panchsheel Nagar, Bhandup, Mumbai.</p>
+                            </div>
+                        </div>
+                        
+                        <!--<div class="content-contact">-->
+                        <!--    <button type="button" class="btn btn-dark">Contact Us</button>-->
+                        <!--</div>-->
+						
+					</div>
+				</div>
+					
+		    </div>
+		    <br>
+		    <div class="overlayproject">
+   </div>   
+            <br>
+		    <div class="row justify-content-center">
+            	<div class="col-md-12 col-sm-12">
+            		<!--<div id="map" class="bg-white"></div>-->
+            		<iframe class="projectmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d120598.14066355866!2d72.8063816!3d19.1649594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b86fda469127%3A0xa9a2742327a67ca3!2sHappy%20Home%20Apartment!5e0!3m2!1sen!2sin!4v1621945851847!5m2!1sen!2sin" 
+            		width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            		
+            	</div>
+            </div>
+		</div>
+</section>
+
+
+<!--<section class="ftco-section ftco-portfolio" style="padding: 2em 0;">-->
+<!--    <div class="container-fluid" id='section-project'>-->
+        
+        
+        <!--<div class="row">-->
+        <!--    <div class="col-md-4 col-sm-2 ">-->
+                
+        <!--    </div>	-->
+        <!--    <div class="col-md-1 col-sm-2 ">-->
+               <!--  <span><i class="fas fa-car"></i></span> -->
+        <!--       <img class='amenty_images' src="./images/project/parked-car.png">-->
+        <!--    </div>-->
+        <!--    <div class="col-md-1 col-sm-2 ">-->
+        <!--        <img class='amenty_images' src="./images/project/cctv.png">-->
+        <!--    </div>-->
+        <!--    <div class="col-md-1 col-sm-2 ">-->
+        <!--        <img class='amenty_images' src="./images/project/weightlifting.png">-->
+        <!--    </div>-->
+        <!--    <div class="col-md-1 col-sm-2 ">-->
+        <!--        <img class='amenty_images' src="./images/project/lift-sign.png">-->
+        <!--    </div>-->
+        <!--    <div class="col-md-4 col-sm-2 ">-->
+                
+        <!--    </div>-->
+        <!--</div>-->
+        <!--<br>-->
+        <!--<div class="row justify-content-center d-flex">-->
+        <!--    <div class="col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated">-->
+        <!--        <span class="subheading">AMENITIES</span>-->
+            <!--  <h2 style="margin-top: -8px">Our Directors</h2> -->
+        <!--</div>-->
+        <!--</div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<script>
+var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("top");
+			for (i = 0; i < x.length; i++) {
+				/* x[i].style.display = "none"; */  
+                x[i].style.opacity=0;
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			/* x[myIndex-1].style.display = "block"; */  
+            x[myIndex-1].style.opacity = 1;  
+			setTimeout(carousel, 3000); // Change image every 2 seconds
+			}
+</script>

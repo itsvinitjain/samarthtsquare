@@ -1,0 +1,148 @@
+.fontStyle{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+}
+.content-video{
+    visibility: hidden;
+    /* background: rgba(0,0,0,79%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    /* transition: width 2s, transform 2s; */
+    height: 100%;
+    position: absolute;
+     /*animation: out 1s forwards;*/
+}
+
+.content-video > h1{
+    top: 30%;
+    left: 46%;
+    position: fixed;
+    color: black;
+}
+
+.content-video > a > img{
+    top: 41%;
+    left: 45%;
+    position: fixed;
+}
+
+/*@keyframes in {*/
+/*    from {transform: scale(0)}*/
+/*    to {transform: scale(1.2)}*/
+/*}*/
+
+/*@keyframes out {*/
+/*    from {transform: scale(1.2)}*/
+/*    to {transform: scale(0)}*/
+/*}*/
+
+.content-video > h1.secondHeader{
+    position: fixed;
+    top: 53%;
+    left: 46%;
+    
+}
+
+
+
+@keyframes moving-arrow {
+0% {
+left: 14px;
+opacity: 1;
+}
+40% {
+left: 14px;
+opacity: 1;
+}
+46.6% {
+left: 30px;
+opacity: 0;
+}
+53.3% {
+left: -30px;
+opacity: 0;
+}
+60% {
+left: 14px;
+opacity: 1;
+}
+100% {
+left: 14px;
+opacity: 1;
+}
+}
+
+/* a {
+    position: fixed;
+    top: 59%;
+    left: 49%;
+    color: rgb(224 151 42 / 96%);
+} */
+a i {
+position: relative;
+border: 1px solid #000;
+border-radius: 93%;
+width: 83px;
+height: 75px;
+overflow: hidden;
+}
+a i:before {
+position: absolute;
+top: 22px;
+left: 26px;
+font-size: 1.9rem;
+}
+a:hover i:before {
+animation-name: moving-arrow;
+animation-duration: 1.5s;
+animation-iteration-count: infinite;
+}
+.landingpageimg{
+    width:150px;
+    height:100px;
+}
+@media screen and (max-width:480px){
+    body::-webkit-scrollbar {
+    width: 0px;
+    }
+   .startingmobvideo{
+       display:block;
+   }
+   .startingwebvideo{
+       display:none;
+   }
+   .content-video > h1 {
+    top: 30%;
+    left: 35%;
+    position: fixed;
+    color: black;
+    font-size: 23px;
+}
+.content-video > a > img {
+    top: 41%;
+    left: 35%;
+    position: fixed;
+}
+.content-video > h1.secondHeader {
+    position: fixed;
+    top: 53%;
+    left: 35%;
+}
+.landingpageimg{
+    width:100px;
+    height:70px;
+}
+}
+@media screen and (min-width:800px){
+   .startingmobvideo{
+       display:none;
+   }
+   .startingwebvideo{
+       display:block;
+   }
+}

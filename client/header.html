@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style='top: 0px;'>
+    <div class="container-fluid" style="margin-top: -8px;">
+      <a class="navbar-brand" href="/home">
+        <img src='images/samarth_logo_new.png' height='80px' width='80px'>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item 1 active" id='1'><a href="/home" class="nav-link">Home</a></li>
+          <li class="nav-item 2" id='2'><a href="/about" class="nav-link">About</a></li>
+          <li class="nav-item 3" id='3'><a href="project" class="nav-link">Project</a></li>
+          <li class="nav-item 4" id='4'><a href="/blog" class="nav-link">Blog</a></li>
+          <li class="nav-item 5" id='5'><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+<script>
+  
+function highlightSelectLi(){
+const ulList = document.querySelector('.navbar').getElementsByTagName('li')
+const route = window.location.href;
+const routeArray= route.split('/').reverse();
+const currentRoute =routeArray[0];
+console.log(currentRoute);
+console.log(ulList)
+
+const classObjectRoute= {
+  home:'1',
+  about:'2',
+  project:'3',
+  blog:'4',
+  contact:'5'
+}
+
+ for(let list in ulList){
+   console.log(list)
+  if (ulList[list].className ==="nav-item 1 active"){
+    console.log(1)
+    ulList[list].classList.remove('active');
+  }
+  else if (ulList[list].className ==="nav-item 2 active"){
+    console.log(2)
+    ulList[list].classList.remove('active');
+  }
+
+  else if (ulList[list].className ==="nav-item 3 active"){
+    console.log(3)
+    ulList[list].classList.remove('active');
+  }
+
+  else if (ulList[list].className ==="nav-item 4 active"){
+    console.log(4)
+    ulList[list].classList.remove('active');
+  }
+}
+
+
+for (let ro in classObjectRoute){
+  if (currentRoute=== ro){
+    var classNameValue= classObjectRoute[ro];
+  }
+  
+   if(currentRoute.includes('?')){
+    var classNameValue ="3"
+  }
+  if(currentRoute ==='blog-single' ){
+    var classNameValue ="4"
+  }
+
+  if(currentRoute!= 'home' & currentRoute!= 'project' & currentRoute!= 'about' & currentRoute!= 'contact' & currentRoute!= 'blog'){
+    var classNameValue ="1"
+  }
+}
+
+const visitedRoute = document.getElementById(classNameValue)
+visitedRoute.classList.add('active');
+
+}
+
+highlightSelectLi();
+
+</script>

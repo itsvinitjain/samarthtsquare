@@ -1,0 +1,235 @@
+.project-div{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    /*background-color: rgb(58 54 54 / 43%);*/
+    cursor: pointer;
+}
+
+
+.vl {
+    border-left:2px solid rgb(224 151 42 / 96%);
+    float: left;
+    height: 0px;
+    margin: 46px 21px 21px 35px;
+    transition: height 2s linear;
+  }
+
+.left-vl{
+    display: flex;
+    border-left:2px solid rgb(224 151 42 / 96%);
+    height: 0px;
+    margin: 46px 28px 16px 426px;
+    transition: height 2s linear 2s;
+}
+
+.line{
+    display: flex;
+    width: 0%;
+    height: 47px;
+    margin-left: 35px;
+    margin-right: 20px;
+    border-bottom: 2px solid rgb(224 151 42 / 96%);
+    position: absolute;
+    transition: width 2s linear 2s;
+    }
+
+.Bottomline{
+    display: flex;
+    width: 0%;
+    top: 490px;
+    left: 35px;
+    height: 10px;
+    border-bottom: 2px solid rgb(224 151 42 / 96%);
+    position: absolute;
+}
+
+@keyframes linmovingHorizontal {
+    0% {width:0%}
+    100% {width:85%}
+}
+@keyframes leftlinemovingvertical {
+    0% {height: 0px}
+    100% {height:453px}
+}
+
+@keyframes bottomlinemovingHorizontal {
+    0% {width:0%}
+    100% {width:85%}
+}
+
+@keyframes rightlinemovingvertical {
+    0% {height: 0px}
+    100% {height:453px}
+}
+
+.movingDiv:hover .project-div .line{
+   animation: linmovingHorizontal 0.5s linear forwards;
+}
+
+.movingDiv:hover .project-div .vl{
+    animation: rightlinemovingvertical 0.5s linear forwards;
+}
+
+.movingDiv:hover .project-div .left-vl{
+    animation: leftlinemovingvertical 0.5s linear 0.5s forwards; 
+}
+
+.movingDiv:hover .project-div .Bottomline{
+    animation: bottomlinemovingHorizontal 0.5s linear 0.5s forwards; 
+}
+
+.footerColor{
+    color: white;
+}
+
+.footerColor:hover{
+    color: rgb(224 151 42 / 96%) !important;
+    cursor:pointer;
+}
+
+.project-img{
+    width: 460px;
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    right: 1px;
+}
+
+.project-content{
+    text-align: left;
+}
+
+.adjustprojectheader{
+    float:left;
+}
+.fontWeightLinkElement{
+            font-weight: 800;
+        }
+        
+.homePageContent{
+    text-align: left;
+}
+
+.pageContentHeader{
+    font-family: 'Abril Fatface', cursive;
+     padding: 240px 0;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+.pagebasecontent{
+    font-family: 'Raleway', sans-serif;
+}
+.scanimg{
+    width: 20%; 
+    height: 65%;
+}
+.sectionblog{
+    padding: 2em 0;
+}
+.displayproj{
+    padding: 2em 0;
+}
+@media screen and (max-width: 640px) {
+    .projectmap{
+    width: 100%;
+}
+ .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 3em;
+    }
+.icon{
+    padding-top: 2em;
+}
+.displaycontentheading  {
+    margin-bottom: 0rem !important;
+    }
+.displaymsg{
+    padding: 0em 0;
+}
+.innercontent{
+    margin-bottom: -4rem !important;
+}
+.mapcontent{
+    padding-top: 4em;
+}
+.scanimg{
+    width: 40%; 
+    height: 65%;
+}
+.sectionblog{
+    padding: 0em 0;
+}
+.pageContentHeader{
+    margin-top: -109px;
+
+}
+.adjustcontentmobile{
+    float:initial;
+}
+.adjusttextmobile{
+    text-align: center;
+}
+.displayproj{
+    padding: 0em 0;
+}
+.adjusttext > .pt-5{
+    padding-top: 0rem !important;
+}
+.project-content-mobile{
+    float:left;
+    display:block;
+}
+.project-content{
+    display:none;
+}
+.adjustprojectheader{
+    float:initial;
+}
+.logomob{
+    display:block;
+        height: 325px;
+        width: inherit;
+        /*padding-left:10%;*/
+        text-align: center;
+    margin-bottom: 40px;
+    margin-top: -50px;
+}
+.logoweb{
+    display:none;
+}
+}
+@media screen and (min-width: 800px) {
+
+.project-content-mobile{
+    display:none;
+}
+.project-content{
+    display:block;
+    
+}
+.logomob{
+    display:none;
+       
+}
+.logoweb{
+    display:block;
+}
+
+}
+
+
+
+
+/*.movingDiv{*/
+/*    right: 117px;*/
+/*    transition: right 2s ease;*/
+/*}*/
+/*.movingDiv:hover {*/
+/*    right: 0px;*/
+/*}*/

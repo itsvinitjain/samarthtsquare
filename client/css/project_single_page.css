@@ -1,0 +1,327 @@
+.content-div{
+    height: 536px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background-color: grey; */
+    /*border: 2px solid rgb(224 151 42 / 96%) ;*/
+    /* overflow: hidden; */
+    /* background-color: rgb(58 54 54 / 20%); */
+}
+
+.content-image1{
+    background: orange;
+    width: 63%;
+    height: 99%;
+    margin: 5px 10px;
+    left: 35%;
+    position: relative;
+}
+
+.content-writeup{
+    background:black;
+    width: 32%;
+    height: 105%;
+    left:25px;
+    /* margin: 50px 10px; */
+    top:1%;
+    position: absolute;
+    transition: left 1s;
+}
+
+
+.content-image1 > img{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    position: absolute;
+    
+}
+.top {transition: opacity 1s ease-in-out;}
+
+/*.content-contact{*/
+/*  position: absolute;*/
+/*  top: 820px;*/
+/*  float: center;*/
+/*  left: 44%;*/
+/*  }*/
+
+  .content-contact > button {
+    width: 18%;
+    height: 47px;
+    background-color: black;
+    /* color: black; */
+    font-size: 25px;
+  }
+
+  .content-contact:hover > button {
+    background-color: white;
+    color: black;
+  }
+
+
+/* .content-toggle{
+    top: 48px;
+    position: relative;
+    width: 20%;
+    left: 60%;
+    cursor: pointer;
+}
+
+.content-image1 img.transparent{
+    opacity: 0;
+}
+ */
+/* @keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  } 
+  
+  .content-image1 img.top{
+    animation: cf3FadeInOut 5s ease-in-out infinite alternate ;
+}
+  */
+
+ /*  @keyframes cf3FadeInOut {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  .content-image1 img:nth-of-type(1){
+    animation: cf3FadeInOut 6s ease-in-out infinite alternate ;
+  }
+  .content-image1 img:nth-of-type(2){
+    animation: cf3FadeInOut 4s ease-in-out infinite alternate ;
+  }
+  .content-image1 img:nth-of-type(3){
+    animation: cf3FadeInOut 2s ease-in-out infinite alternate ;
+  }
+ */
+
+.content-inner-part{
+    position: absolute;
+    width: 95%;
+    margin-top: 91px;
+    margin-right: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-inner-part > h1{
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 23px;
+    color:rgb(224 151 42 / 96%) !important;
+}
+
+.content-inner-part > p{
+    /* display: flex; */
+    color: white;
+    text-align: left;
+}
+.footerColor:hover {
+    color: rgb(224 151 42 / 96%) !important;
+    cursor: pointer;
+}
+
+.footerColor {
+    color: white;
+}
+
+.amentySpan{
+    font-size: 30px
+}
+
+.amenty_images{
+  width: 50%;
+}
+
+.amenty-name{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin-top: 8px;
+    line-height: 13px;
+}
+
+.amenty-display-images{
+    width:100%;
+    height:82%;
+}
+
+.connectivityimg{
+    width: 11%; 
+    height: 50%;
+}
+.connectivitymodal{
+    height: 500px;
+    width: 800px;
+    left:20%;
+    position:fixed;
+}
+.connectivitymodalvideo{
+    height: 98%; 
+    width: 96%;
+}
+.overlayproject{
+    visibility:hidden;
+}
+/* .content-image1:hover > .content-writeup{
+    left: 50px;
+} */
+
+/* Responsive view */
+
+@media screen and (max-width: 640px) {
+div#section-project{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding:19em 0;
+  padding-bottom: 0px;
+  } 
+  
+  div.content-writeup
+    {
+        width: 90%;
+    height: 106%;
+    left: 20px;
+    position: absolute;
+    transition: left 1s;
+    top: 70%;
+    }
+    .content-image1 {
+    
+      width: 100%;
+      height: 100%;
+      padding-right: 10%;
+      position: absolute;
+      background: white;
+      left: 10px;
+    }
+    
+    .content-image1 > img{
+    
+  width: 100%;
+  height: 60%;
+  right:0px;
+  padding-right: 10%;
+  position: absolute;
+  background:white;
+}  
+.content-inner-part > h1 {
+    display: flex;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    color: rgb(224 151 42 / 96%) !important;
+}
+
+  .amenty_images{
+    width: 40%;
+    padding: 4%;
+  }
+  .content-contact > button {
+    width: 70%;
+    height: 47px;
+    background-color: black;
+    /* color: black; */
+    font-size: 25px;
+  }
+  .connectivityimg{
+   width: 36%; 
+    height: 50%;
+}
+.currentimgdiv{
+    display:none;
+}
+.connectivitymodal{
+    height: 40%;
+    width: 98%;
+    left: 1%;
+    position: fixed;
+}
+.connectivitymodalvideo{
+        margin-bottom: 0%;
+    height: 106%;
+    width: 100%;
+}
+.overlayproject{
+    visibility:visible;
+    margin-bottom: 108%;
+}
+.projectmap{
+    width: 100%;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 123px; 
+  }
+  .displaycolumn{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 123px;
+  }
+  
+ 
+  .displayamenities:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .displaysection{
+    display: none;
+  }
+  .textamenities{
+          padding: 2em 0;
+  }
+  .displayImg{
+    /*  border-radius: 5px;*/
+    /*cursor: pointer;*/
+    /*transition: 0.3s;*/
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+  }
+}
+ @media screen and (min-width: 800px) {
+
+  .displayamenities{
+display: none;
+  }
+}
+
+/* End of responsive */
+
+

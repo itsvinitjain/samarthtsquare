@@ -1,0 +1,102 @@
+<section class="ftco-section ftco-portfolio" style="padding: 4em 0;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 content-column">
+					<div class="content-div" >
+						
+                        <div class="content-image1">
+                            <!-- <img class="top" src="./images/project/Samarth_menaba_4.jpg"> -->
+                            <img class="top" src="./images/project/Bhoomi_Legend_project_3.jpg"> 
+                            <img class="top" src="./images/project/Bhoomi_Legend_project_2.jpg"> 
+                            <img class='top' src="./images/project/Bhoomi_Legend_project_1.jpg">
+                            
+                        </div>
+                        <div class="content-writeup">
+                            <div class="content-inner-part">
+                                <h1>BHOOMI LEGEND </h1>
+                                <p>Bhoomi Legend in Kandivali (East) is a residential project. It offers apartments with perfect combination of contemporary architecture and features that provide a comfortable living experience.</p>
+                                <p>Current Status- Completed in 2013</p>
+                                <!-- <p>Storeys- 23 Floors</p> -->
+                                <!-- <p>MahaRERA Registered-P51800003379</p> -->
+                                <p>Working Partner- Bhoomi Developers</p>
+                                <p>Location- Akurli road, Kandivali East.</p>
+                            </div>
+                        </div>
+                        
+                        <!--<div class="content-contact">-->
+                        <!--    <button type="button" class="btn btn-dark">Contact Us</button>-->
+                        <!--</div>-->
+						
+					</div>
+				</div>
+					
+		    </div>
+		    <br>
+		    <div class="overlayproject">
+   </div>
+		    <div class="row justify-content-center">
+            	<div class="col-md-12 col-sm-12">
+            		<!--<div id="map" class="bg-white"></div>-->
+            		<iframe class="projectmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3767.868469458308!2d72.8608518!3d19.2009464!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b722d3ce0afd%3A0x8635180ce5493f00!2sBhoomi%20Legend%2C%20Jivdani%20Vikas%20Mandal%2C%20Narsi%20Pada%2C%20Kandivali%20East%2C%20Mumbai%2C%20Maharashtra%20400101!5e0!3m2!1sen!2sin!4v1621946670844!5m2!1sen!2sin" 
+            		width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            		
+            		
+            	</div>
+            </div>
+		</div>
+</section>
+
+
+<section class="ftco-section ftco-portfolio" style="padding: 2em 0;">
+    <div class="container-fluid">
+        
+        
+        <!--<div class="row">-->
+        <!--    <div class="col-md-4 col-sm-2 ">-->
+                
+        <!--    </div>	-->
+        <!--    <div class="col-md-1 col-sm-2 ">-->
+               <!--  <span><i class="fas fa-car"></i></span> -->
+        <!--       <img class='amenty_images' src="./images/project/parked-car.png">-->
+        <!--    </div>-->
+        <!--    <div class="col-md-1 col-sm-2 ">-->
+        <!--        <img class='amenty_images' src="./images/project/cctv.png">-->
+        <!--    </div>-->
+        <!--    <div class="col-md-1 col-sm-2 ">-->
+        <!--        <img class='amenty_images' src="./images/project/weightlifting.png">-->
+        <!--    </div>-->
+        <!--    <div class="col-md-1 col-sm-2 ">-->
+        <!--        <img class='amenty_images' src="./images/project/lift-sign.png">-->
+        <!--    </div>-->
+        <!--    <div class="col-md-4 col-sm-2 ">-->
+                
+        <!--    </div>-->
+        <!--</div>-->
+        <!--<br>-->
+        <!--<div class="row justify-content-center d-flex">-->
+        <!--    <div class="col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated">-->
+        <!--        <span class="subheading">AMENITIES</span>-->
+            <!--  <h2 style="margin-top: -8px">Our Directors</h2> -->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</section>
+
+<script>
+var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("top");
+			for (i = 0; i < x.length; i++) {
+				/* x[i].style.display = "none"; */  
+                x[i].style.opacity=0;
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			/* x[myIndex-1].style.display = "block"; */  
+            x[myIndex-1].style.opacity = 1;  
+			setTimeout(carousel, 3000); // Change image every 2 seconds
+			}
+</script>
