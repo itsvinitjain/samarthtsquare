@@ -2,8 +2,12 @@ const router = require('express').Router()
 const path = require('path')
 const sendEmail= require('../config/nodemailerSetup');
 
+// router.get('/', (req,res)=>{
+//     res.sendFile(path.join(__dirname,'../client/landingpage.html'))
+// })
+
 router.get('/', (req,res)=>{
-    res.sendFile(path.join(__dirname,'../client/landingpage.html'))
+    res.sendFile(path.join(__dirname,'../client/home.html'))
 })
 
 router.get('/home', (req,res)=>{
