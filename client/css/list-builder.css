@@ -1,0 +1,41 @@
+#list-builder {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    filter: alpha(opacity=80);
+	opacity: 0.8;
+    display: none;
+}
+
+.jhu {
+    width: 50%;
+    height: 50%;
+    float: left;
+    }
+
+#popup-box-content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../images/newsletter.png");
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border: 5px solid #FFFFFF;
+    display: none;
+}
+
+#popup-close {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    cursor: pointer;
+    width: 40px;
+}
+

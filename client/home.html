@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="./css/added.css">
 	<link rel="stylesheet" href="./css/startingLoader.css">
 	<style>
+	.carousel-control-next,.carousel-control-prev{
+    filter: invert(100%);
+	}
 	    /* Mobile responsive */
 /*@media screen and (min-width: 800px) {*/
 /*    div.pagetext{*/
@@ -84,28 +87,27 @@
 	<div id="header"></div>
     <!-- END nav -->
     
-    <section class="hero-wrap" style="background-image: url('images/home_1.jpg');" data-stellar-background-ratio="0.3">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center">
-          <div class="col-md-10 col-lg-7 ftco-animate d-flex align-items-end" style='bottom: 18%;'>
-          	<div class="text">
-	            <h1 class="mb-4 pageContentHeader">Building <span style="text-align:left;">an</span> Emotion</h1>
-	            <!--<p style="font-size: 18px;">From as low as $20 A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
-	            <!-- <div class="d-flex meta">
-		            <div class=""><p class="mb-0"><a href="#" class="btn btn-primary py-3 px-2 px-md-4">Explore Projects</a></p></div>
-		            <a href="#" class="d-flex align-items-center button-link">
-		            	<div class="button-video d-flex align-items-center justify-content-center">
-			            	<span class="fa fa-play"></span>
-			            </div>
-			            <span>Watch our video</span>
-		            </a>
-		        </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			  <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
+			</ol>
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img class="d-block w-100" src="images/home4 (1).png" alt="Fourth slide">
+			  </div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		</div>
 
    <!-- <section class="ftco-section ftco-no-pb ftco-no-pt bg-primary">
       <div class="container">
@@ -164,7 +166,7 @@
 						<h3 class="mb-4 homePageContent " style='letter-spacing: 1px;color:rgb(224 151 42 / 96%);'><b>ABOUT SAMARTH</b></h3>
 
 						<p class='homePageContent '>Samarth T-Square is a new face and vertical of Samarth Erectors & Developers. The 30 years old organization working as a committed organization and catering its services in almost every stream of secured housing.</p>
-						<p class='homePageContent '>Formed & headed by civil & structural engineers, architects, and master-minded other professionals. Supplemented by highly talented and adequate administrative set-up. The organization performs in two main streams, Development & Major structural repairs also restoration and allied works.</p>
+						<p class='homePageContent '>Formed & headed by civil & structural engineers, architects, and master-minded other professionals. Supplemented by highly talented and adequate administrative set-up. The organization performs in two main streams Development & Major structural repairs which also includes restoration and allied works.</p>
 						
 						
 					</div>
@@ -227,7 +229,7 @@
 	  				<div class="row no-gutters align-items-center">
 	  					<!-- <div class="col-md-5 img js-fullheight" style="background-image: url(images/work-1.jpg);height:538px !important;"> -->
 							<div class="col-md-5 img movingDiv" style="height: 538px;">
-							    <img src="images/Samarth_Menaba.jpg" class='project-img'>
+							    <img src="images/Samarth_Menaba (3).jpg" class='project-img'>
 							<div class="project-div"> 
                                 <!--<div class="line"></div>-->
                                 <!--<div class="vl"></div>-->
@@ -241,7 +243,7 @@
 	  								<div class="desc">
 		  								<div class="top">
 			  								<!--<span class="subheading">Exterior {12/07/2020}</span>-->
-				  							<h2 class="mb-4 adjustprojectheader"><a href="work.html">Samarth Menaba</a></h2>
+				  							<h2 class="mb-4 adjustprojectheader"><a href="/project-single?project=Menaba">Samarth Menaba</a></h2>
 			  							</div>
 			  							<div class="absolute project-content">
 			  							    <br><br><br><br>
@@ -264,7 +266,7 @@
 	  				<div class="row no-gutters align-items-center">
 	  					<!-- <div class="col-md-5 order-md-last img js-fullheight" style="background-image: url(images/work-2.jpg);"> -->
 						<div class="col-md-5 order-md-last img movingDiv" style="height: 538px;">
-						    <img src="images/Samarth_tanish.jpg" class='project-img'>
+						    <img src="images/Samarth nandadeep gray.webp" class='project-img'>
 							<div class="project-div"> 
                                 <!--<div class="line"></div>-->
                                 <!--<div class="vl"></div>-->
@@ -278,17 +280,17 @@
 	  								<div class="desc text-md-right">
 		  								<div class="top">
 			  								<!--<span class="subheading">Furniture {12/07/2020}</span>-->
-				  							<h2 class="mb-4 adjustcontentmobile"><a href="work.html">Samarth Tanish</a></h2>
+				  							<h2 class="mb-4 adjustcontentmobile"><a href="/project-single?project=samartnandadeep" style="white-space: nowrap;">Samarth Nandadeep</a></h2>
 			  							</div>
 			  							<div class="absolute project-content adjustcontentmobile">
-				  							<p class="adjusttextmobile">This wondrous multistoried apartment Samarth Tanish offers spacious apartments with modern amenities and facilities that reflect the confluence of class and comfort.</p>
+				  							<p class="adjusttextmobile">This wondrous multistoried apartment Samarth Nandadeep offers spacious apartments with modern amenities and facilities that reflect the confluence of class and comfort.</p>
                                             <p class="adjusttextmobile">It is the home of your dreams where you celebrate love and form the memories of a lifetime.</p>
-				  							<p class="adjusttextmobile"><a href="/project-single?project=samarthtanish" class="custom-btn">View Project</a></p>
+				  							<p class="adjusttextmobile"><a href="/project-single?project=samartnandadeep" class="custom-btn">View Project</a></p>
 			  							</div>
 			  							<div class="absolute project-content-mobile">
-				  							<p class="adjusttextmobile">This wondrous multistoried apartment Samarth Tanish offers spacious apartments with modern amenities and facilities that reflect the confluence of class and comfort.</p>
+				  							<p class="adjusttextmobile">This wondrous multistoried apartment Samarth Nandadeep offers spacious apartments with modern amenities and facilities that reflect the confluence of class and comfort.</p>
                                             <p class="adjusttextmobile">It is the home of your dreams where you celebrate love and form the memories of a lifetime.</p>
-				  							<p class="adjusttextmobile"><a href="/project-single?project=samarthtanish" class="custom-btn">View Project</a></p>
+				  							<p class="adjusttextmobile"><a href="/project-single?project=samartnandadeep" class="custom-btn">View Project</a></p>
 			  							</div>
 		  							</div>
 	  							</div>
@@ -301,7 +303,7 @@
 	  				<div class="row no-gutters align-items-center">
 	  					<!-- <div class="col-md-5 img js-fullheight" style="background-image: url(images/work-3.jpg);"> -->
 						<div class="col-md-5 img movingDiv" style="height: 538px;">
-						    <img src="images/Bhoomi_samarth.png" class='project-img'>
+						    <img src="images/manoraenclave_project (2).jpg" class='project-img'>
 							<div class="project-div"> 
                                 <!--<div class="line"></div>-->
                                 <!--<div class="vl"></div>-->
@@ -315,17 +317,17 @@
 	  								<div class="desc">
 		  								<div class="top">
 			  								<!--<span class="subheading">Building {12/07/2020}</span>-->
-				  							<h2 class="mb-4 adjustprojectheader"><a href="work.html">Bhoomi Samarth</a></h2>
+				  							<h2 class="mb-4 adjustprojectheader"><a href="/project-single?project=manora">Manorama Enclave</a></h2>
 			  							</div>
 			  							<div class="absolute project-content">
 			  							    <br><br><br><br>
-				  							<p>Bhoomi Samarth in Goregaon (East) is a residential project by Samarth Erectors and Developers & Bhoomi group. It offers apartments with perfect combination of contemporary architecture and features that provide a comfortable living experience.</p>
-				  							<p><a href="/project-single?project=Bhoomi" class="custom-btn">View Project</a></p>
+				  							<p>Manorama Enclave in Borivali (East) is a residential projects that is situated besides the serene nature of Sanjay Gandhi National park. It offers apartments with perfect combination of contemporary architecture and features that provide a comfortable living experience.</p>
+				  							<p><a href="/project-single?project=manora" class="custom-btn">View Project</a></p>
 			  							</div>
 			  							<div class="absolute project-content-mobile">
 			  							    
-				  							<p>Bhoomi Samarth in Goregaon (East) is a residential project by Samarth Erectors and Developers & Bhoomi group. It offers apartments with perfect combination of contemporary architecture and features that provide a comfortable living experience.</p>
-				  							<p><a href="/project-single?project=Bhoomi" class="custom-btn">View Project</a></p>
+				  							<p>Manorama Enclave in Goregaon (East) is a residential project by Samarth Erectors and Developers & Bhoomi group. It offers apartments with perfect combination of contemporary architecture and features that provide a comfortable living experience.</p>
+				  							<p><a href="/project-single?project=manora" class="custom-btn">View Project</a></p>
 			  							</div>
 		  							</div>
 	  							</div>
@@ -479,6 +481,8 @@
 		},1000)
 		
 	})
+
+	$('.carousel').carousel();
 </script>
 
   </div>

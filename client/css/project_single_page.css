@@ -21,7 +21,7 @@
 .content-writeup{
     background:black;
     width: 32%;
-    height: 105%;
+    height: 99%;
     left:25px;
     /* margin: 50px 10px; */
     top:1%;
@@ -125,7 +125,7 @@
 .content-inner-part{
     position: absolute;
     width: 95%;
-    margin-top: 91px;
+    margin-top: 40px;
     margin-right: 10px;
     margin-left: 20px;
     display: flex;
